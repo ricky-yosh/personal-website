@@ -1,0 +1,117 @@
+/* Color Palette */
+:root {
+    --dark-red: #780000;
+    --bright-red: #C1121F;
+    --light-cream: #FDF0D5;
+    --dark-blue: #003049;
+    --darker-blue: #002436;
+    --soft-blue: #669BBC;
+    font-family: "Clarkson", Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Zero out all margins and styling */
+HTML,
+body,
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style: none;
+}
+
+/* Navigation Bar Styling */
+.quick-links,
+.social-links,
+nav {
+    display: flex;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--dark-blue);
+}
+
+#long-nav-item {
+    justify-content: center;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav-text:link,
+.nav-text:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    padding: 90px;
+    color: white;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Two Main Sections: 1. About Me & 2. Resume */
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: center;
+}
+
+.about-me-description {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main {
+    background-color: var(--darker-blue);
+}
+
+.resume-section {
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.all-resume-sections {
+    align-items: center;
+}
+
+section {
+    align-items: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
