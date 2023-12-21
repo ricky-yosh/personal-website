@@ -1,11 +1,12 @@
 /* Color Palette */
 :root {
-    --dark-red: #780000;
-    --bright-red: #C1121F;
-    --light-cream: #FDF0D5;
     --dark-blue: #003049;
+    --grey-blue: #2A5065;
     --darker-blue: #002436;
     --soft-blue: #669BBC;
+    --ash-grey: #B5BFA1;
+    --light-swamp-green: #B5BFA1;
+    --dark-swamp-green: #6E9887;
     font-family: "Clarkson", Helvetica, sans-serif;
     color: white;
     background-color: black;
@@ -230,5 +231,90 @@ hr {
 }
 
 #quicken-logo-image {
-    width: 20px;
+    height: 30px;
+    width: auto;
+}
+
+.work-experience-address {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#stedwards-oit-combined-logo {
+    display: flex;
+}
+
+#stedwards-left-logo {
+    margin-right: -5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#stedwards-right-logo {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.stedwards-combined-image {
+    height: 50px;
+    width: auto;
+}
+
+.date-bubble {
+    display: flex;
+    align-items: center;
+}
+
+.connecting-date-line {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10px;
+
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.month-paragraph {
+    font-size: 20px;
+    color: white;
+    background-color: var(--grey-blue);
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.year-paragraph {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-left: -15px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    color: black;
+    background-color: var(--soft-blue);
+    border-radius: 10px;
+}
+
+.bullet-point-list {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.list-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.section-paragraph-light-padding {
+    padding: 5px;
+}
+
+.section-title-no-padding {
+    padding: 0;
+}
+
+.date-paragraph {
+    margin-bottom: 10px;
 }
