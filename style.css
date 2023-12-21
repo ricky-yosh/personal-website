@@ -176,7 +176,6 @@ section {
     padding-top: 250px;
     padding-bottom: 250px;
 
-    max-width: 600px;
 }
 
 .section-paragraph {
@@ -199,6 +198,7 @@ section {
 
 .section-text-section {
     text-align: start;
+    max-width: 600px;
 }
 
 hr {
@@ -228,11 +228,19 @@ hr {
     margin: 20px;
     background-color: var(--soft-blue);
     border-radius: 100px;
+
+    /* Hover and enlarge feature */
+    transition: transform 0.3s, font-size 0.3s;
+}
+
+/* Hover and enlarge feature */
+.bubble-item:hover {
+    transform: scale(1.3);
 }
 
 #quicken-logo-image {
-    height: 30px;
-    width: auto;
+    width: 100px;
+    height: fit-content;
 }
 
 .work-experience-address {
@@ -317,4 +325,54 @@ hr {
 
 .date-paragraph {
     margin-bottom: 10px;
+}
+
+.image-and-text-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parallax-element {
+    position: fixed;
+}
+
+/* Parallax Elements */
+/* list of all images to keep track of */
+/*
+.caffeine-tracker-video
+.quicken-interface-feature-video
+.food-truck-form-video
+.software-developer-accompanying-image
+.av-associate-accompanying-image
+.st-edwards-university-accompanying-image
+*/
+
+.caffeine-tracker-video {
+    width: fit-content;
+    height: 200px;
+}
+
+.quicken-interface-feature-video {
+    width: fit-content;
+    height: 200px;
+}
+
+.food-truck-form-video {
+    width: fit-content;
+    height: 200px;
+}
+
+.software-developer-accompanying-image {
+    width: fit-content;
+    height: 200px;
+}
+
+.av-associate-accompanying-image {
+    width: fit-content;
+    height: 200px;
+}
+
+.st-edwards-university-accompanying-image {
+    width: fit-content;
+    height: 200px;
 }
