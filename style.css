@@ -43,11 +43,11 @@ nav {
     top: 0;
     width: -webkit-fill-available;
     z-index: 1000;
-    transition: top 0.3s;
 }
 
-nav:hover {
-    top: 0;
+.navbar-button-images {
+    width: 40px;
+    height: fit-content;
 }
 
 #long-nav-item {
