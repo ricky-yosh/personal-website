@@ -49,6 +49,11 @@ nav {
     width: max-content;
     padding: 10px;
     font-size: 18px;
+    border-radius: 7px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-text:link,
@@ -84,16 +89,40 @@ header {
     flex-direction: column;
     align-items: center;
     max-width: 700px;
-    padding-left: 10px;
-    padding-right: 10px;
+
     letter-spacing: 2px;
     line-height: 2;
     text-align: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border-radius: 5px;
+
+    background-image: url(./images/bay-area-image.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .about-me-description {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.about-me-h1 {
+    padding-top: 50px;
+    font-size: 100px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
 
 main {
@@ -114,4 +143,92 @@ section {
     align-items: center;
     letter-spacing: 1px;
     line-height: 1.6;
+}
+
+.view-project-button {
+    background-color: var(--soft-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    border-radius: 30px;
+}
+
+.view-project-button:hover {
+    /* lighter #669BBC */
+    background-color: rgba(102, 155, 188, 0.5);
+}
+
+.view-project-button:link,
+.view-project-button:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 400px;
+}
+
+.section-item {
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+    max-width: 600px;
+}
+
+.section-paragraph {
+    padding: 10px;
+}
+
+.bottom-paragraph {
+    margin-bottom: 30px;
+}
+
+.section-item-title {
+    padding-bottom: 10px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.subtitle-extra-info {
+    padding-bottom: 10px;
+}
+
+.section-text-section {
+    text-align: start;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.bubble-section-hr {
+    margin-bottom: 40px;
+}
+
+.bubble-items-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills {
+    padding-bottom: 200px;
+}
+
+.bubble-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 20px;
+    background-color: var(--soft-blue);
+    border-radius: 100px;
+}
+
+#quicken-logo-image {
+    width: 20px;
 }
