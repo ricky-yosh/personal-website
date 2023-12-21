@@ -37,6 +37,17 @@ nav {
     justify-content: space-between;
     padding: 10px;
     background-color: var(--dark-blue);
+
+    /* allow nav to follow user */
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+nav:hover {
+    top: 0;
 }
 
 #long-nav-item {
@@ -99,7 +110,7 @@ header {
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 90px;
     margin-bottom: 50px;
 
     border-radius: 5px;
@@ -169,7 +180,17 @@ section {
 
 .section-title {
     text-align: center;
-    margin-top: 400px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.title-screen-title {
+    padding-top: 400px;
+}
+
+.bubble-list-section-title {
+    padding-top: 150px;
+    margin-top: 250px;
 }
 
 .section-item {
@@ -239,7 +260,7 @@ hr {
 }
 
 #quicken-logo-image {
-    width: 100px;
+    width: 150px;
     height: fit-content;
 }
 
