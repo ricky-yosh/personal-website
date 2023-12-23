@@ -351,6 +351,7 @@ hr {
 .image-and-text-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .parallax-element {
@@ -369,31 +370,47 @@ hr {
 */
 
 .caffeine-tracker-video {
+    border-radius: 10px;
     width: fit-content;
-    height: 200px;
+    height: 439px;
 }
 
 .quicken-interface-feature-video {
+    border-radius: 10px;
     width: fit-content;
-    height: 200px;
+    height: 363px;
 }
 
 .food-truck-form-video {
+    border-radius: 10px;
     width: fit-content;
-    height: 200px;
+    height: 270px;
 }
 
 .software-developer-accompanying-image {
+    border-radius: 10px;
     width: fit-content;
-    height: 200px;
+    height: 400px;
 }
 
 .av-associate-accompanying-image {
+    border-radius: 10px;
     width: fit-content;
-    height: 200px;
+    height: 350px;
 }
 
 .st-edwards-university-accompanying-image {
+    border-radius: 10px;
     width: fit-content;
-    height: 200px;
+    height: 100px;
+}
+
+/* Slide in animation CSS */
+.animation-hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animation-shown {
+    opacity: 1;
 }

@@ -41,7 +41,7 @@
     "editor.lineNumbers": "off",
     "editor.matchBrackets": "near",
     "editor.minimap.enabled": false,
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "none",
     "editor.scrollbar.horizontalScrollbarSize": 8,
@@ -62,7 +62,6 @@
     "window.newWindowDimensions": "inherit",
     "window.title": "${rootName}",
     "window.titleBarStyle": "native",
-    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "GitHub Dark Default",
     "workbench.editor.enablePreview": false,
     "workbench.editor.revealIfOpen": true,
@@ -75,5 +74,6 @@
     "workbench.statusBar.visible": false,
     "workbench.tips.enabled": false,
     "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "none"
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.activityBar.location": "hidden"
 }
