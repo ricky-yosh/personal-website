@@ -408,9 +408,34 @@ hr {
 /* Slide in animation CSS */
 .animation-hidden {
     opacity: 0;
+    filter: blur(5px);
+    /* Start slide at left side */
+    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .animation-shown {
     opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
+
+/* Animate children with different speed */
+.multi-animation:nth-child() {
+    transition-delay: 200ms;
+}
+
+.multi-animation:nth-child() {
+    transition-delay: 400ms;
+}
+
+.multi-animation:nth-child() {
+    transition-delay: 600ms;
+}
+
+/* If user does not want to see animation */
+/* @media(prefers-reduced-motion) {
+    .animation-hidden {
+        transition: none;
+    }
+} */
