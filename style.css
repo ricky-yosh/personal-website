@@ -356,6 +356,10 @@ hr {
     align-items: center;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 /* Media query for smaller screens */
 /* Nav bar */
 @media screen and (max-width: 800px) {
@@ -385,7 +389,72 @@ hr {
     .social-links {
         margin-left: auto;
     }
+
+    .hamburger-item {
+        display: none;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+
+        width: max-content;
+        justify-content: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    input {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: white;
+        border-radius: 10px;
+
+        transform-origin: left center;
+        transition: opacity var(--animation-timing), width var(--animation-timing);
+    }
+
+    :root {
+        --bar-width: 40px;
+        --bar-height: 3px;
+        --hamburger-gap: 10px;
+        --animation-timing: 200ms ease-in-out;
+        --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2)
+    }
+
+    .hamburger-menu:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
+    }
+
+    .hamburger-menu:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
+    }
+
+    .hamburger-menu input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    .hamburger-menu input:checked {
+        opacity: 0;
+        width: 0;
+    }
 }
+
 
 /* Section */
 @media screen and (max-width: 1000px) {
@@ -398,11 +467,6 @@ hr {
     }
 }
 
-.parallax-element {
-    position: fixed;
-}
-
-/* Parallax Elements */
 /* list of all images to keep track of */
 /*
 .caffeine-tracker-video
@@ -483,3 +547,25 @@ hr {
         transition: none;
     }
 } */
+
+@media screen and (max-width: 800px) {
+    .resume-section {
+
+        width: 90vw;
+        padding: 0;
+        padding-left: 5px;
+    }
+
+    .about-me-h1 {
+        font-size: 60px;
+    }
+
+    .connecting-date-line {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .stedwards-combined-image {
+        height: 35px;
+    }
+}

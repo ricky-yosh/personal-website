@@ -15,3 +15,16 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".animation-hidden");
 // use the observer to detect elements
 hiddenElements.forEach((element) => observer.observe(element));
+
+document.querySelector(".hamburger-checkbox").addEventListener("change", function () {
+    menuItemsDropdown.forEach((menuItem) => {
+        if (this.checked) {
+            menuItem.style.display = "flex"
+        }
+        else {
+            menuItem.style.display = "none"
+        }
+    });
+});
+
+const menuItemsDropdown = document.querySelectorAll(".hamburger-item")
