@@ -421,7 +421,7 @@ hr {
 }
 
 /* Animate children with different speed */
-.multi-animation:nth-child() {
+/* .multi-animation:nth-child() {
     transition-delay: 200ms;
 }
 
@@ -431,7 +431,7 @@ hr {
 
 .multi-animation:nth-child() {
     transition-delay: 600ms;
-}
+} */
 
 /* If user does not want to see animation */
 /* @media(prefers-reduced-motion) {
