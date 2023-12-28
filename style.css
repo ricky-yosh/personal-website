@@ -553,6 +553,10 @@ hr {
         max-height: 64px;
     }
 
+    .navbar-button-images {
+        max-height: 64px;
+    }
+
     .resume-section {
         width: 90vw;
         padding: 0;
