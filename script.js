@@ -12,9 +12,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll(".animation-hidden");
+const hiddenElementsX = document.querySelectorAll(".animation-hidden-X");
+const hiddenElementsY = document.querySelectorAll(".animation-hidden-Y");
 // use the observer to detect elements
-hiddenElements.forEach((element) => observer.observe(element));
+hiddenElementsX.forEach((element) => observer.observe(element));
+hiddenElementsY.forEach((element) => observer.observe(element));
 
 document.querySelector(".hamburger-checkbox").addEventListener("change", function () {
     menuItemsDropdown.forEach((menuItem) => {

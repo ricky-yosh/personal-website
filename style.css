@@ -521,11 +521,19 @@ hr {
 }
 
 /* Slide in animation CSS */
-.animation-hidden {
+.animation-hidden-X {
     opacity: 0;
     filter: blur(5px);
     /* Start slide at left side */
     transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.animation-hidden-Y {
+    opacity: 0;
+    filter: blur(5px);
+    /* Start slide at left side */
+    transform: translateY(100%);
     transition: all 1s;
 }
 
@@ -565,7 +573,7 @@ hr {
     }
 
     #quicken-logo-image {
-        max-height: 150px;
+        max-height: 29.797px;
     }
 
     .resume-section {
