@@ -479,38 +479,44 @@ hr {
 
 .caffeine-tracker-video {
     border-radius: 10px;
-    width: fit-content;
-    height: 439px;
+    width: 100%;
+    max-width: 202.320px;
+    height: auto;
 }
 
 .quicken-interface-feature-video {
     border-radius: 10px;
-    width: fit-content;
-    height: 363px;
+    width: 100%;
+    max-width: 554.398px;
+    height: auto;
 }
 
 .food-truck-form-video {
     border-radius: 10px;
-    width: fit-content;
-    height: 270px;
+    width: 100%;
+    max-width: 554.398px;
+    height: auto;
 }
 
 .software-developer-accompanying-image {
     border-radius: 10px;
-    width: fit-content;
-    height: 400px;
+    width: 100%;
+    max-width: 554.398px;
+    height: auto;
 }
 
 .av-associate-accompanying-image {
     border-radius: 10px;
-    width: fit-content;
-    height: 350px;
+    width: 100%;
+    max-width: 554.398px;
+    height: auto;
 }
 
 .st-edwards-university-accompanying-image {
     border-radius: 10px;
-    width: fit-content;
-    height: 100px;
+    width: 100%;
+    max-width: 554.398px;
+    height: auto;
 }
 
 /* Slide in animation CSS */
@@ -554,7 +560,11 @@ hr {
     }
 
     .navbar-button-images {
-        max-height: 64px;
+        max-height: 40px;
+    }
+
+    #quicken-logo-image {
+        max-height: 150px;
     }
 
     .resume-section {
